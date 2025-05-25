@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 .auth-container {
   display: flex;
   justify-content: center;
@@ -10,9 +19,12 @@
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 320px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .auth-form input {
@@ -21,6 +33,15 @@
   margin: 0.5rem 0;
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  background-color: #f0f8ff;
 }
 
 .auth-form button {
@@ -32,6 +53,19 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.auth-form button:hover {
+  background: #0056b3;
+}
+
+.auth-form button:focus {
+  outline: none;
+  background-color: #0069d9;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+  transform: scale(1.02);
 }
 
 .auth-form p {
@@ -43,4 +77,5 @@
   color: #007bff;
   cursor: pointer;
   text-decoration: underline;
+  font-weight: 500;
 }
