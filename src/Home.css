@@ -1,0 +1,28 @@
+/* Home.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* center vertically */
+  align-items: center;      /* center horizontally */
+  height: 100vh;
+  background: #f9faff;
+  padding: 2rem;
+  gap: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logout-button {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}

@@ -7,12 +7,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .chatbox-messages {
+  scroll-behavior: smooth;
   flex: 1;
   overflow-y: auto;
   padding-right: 5px;
@@ -24,6 +25,30 @@
   margin-bottom: 0.5rem;
   background: #f1f1f1;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-text {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.message-info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.message-sender {
+  font-weight: 600;
+}
+
+.message-time {
+  color: #bbb;
+  font-style: italic;
 }
 
 .chatbox-input {
@@ -42,7 +67,7 @@
 .chatbox-input input:focus {
   outline: none;
   border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
 .chatbox-input button {
